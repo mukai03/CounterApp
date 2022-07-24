@@ -16,7 +16,6 @@ class MainActivity : AppCompatActivity(), CounterView {
         setContentView(binding.root)
         binding = ActivityMainBinding.inflate(layoutInflater)
         presenter= Injector.getPresenter()
-
         presenter.attachView(this)
         initClicker()
     }
